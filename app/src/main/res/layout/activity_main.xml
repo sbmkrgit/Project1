@@ -38,5 +38,13 @@
         android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"/>
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"/>
+
 
 </LinearLayout>

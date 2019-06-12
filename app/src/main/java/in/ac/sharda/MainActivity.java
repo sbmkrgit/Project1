@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_TEXT = "in.ac.sharda.EXTRA_TEXT";
     EditText userName, password;
     Button btnSubmit;
+    Button btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         userName = (EditText) findViewById(R.id.userName);
         password = (EditText) findViewById(R.id.password);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        btnRegister= (Button)findViewById(R.id.btnRegister);
 
 
 
@@ -48,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, ThirdActivity.class);
+                startActivity(intent2);
+            }
+        });
     }
 
 
