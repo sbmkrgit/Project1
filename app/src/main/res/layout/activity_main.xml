@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnRegister"
         android:text="Register"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"/>
 
